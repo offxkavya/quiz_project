@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function RoomPage() {
     const { id: roomId } = useParams();
@@ -283,7 +284,7 @@ export default function RoomPage() {
                             Submit & Finalize Mission
                         </button>
                         <p className="text-muted" style={{ marginTop: '1.5rem', fontSize: '0.85rem' }}>
-                            Make sure you've answered all questions before submitting.
+                            Make sure you&apos;ve answered all questions before submitting.
                         </p>
                     </div>
                 </div>

@@ -18,7 +18,7 @@ export default function Dashboard() {
             setUser(JSON.parse(storedUser));
             fetchRooms();
         }
-    }, []);
+    }, [router]);
 
     const fetchRooms = async (topic = "") => {
         setLoading(true);

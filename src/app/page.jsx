@@ -159,7 +159,7 @@ export default function Home() {
                             Global <br /><span className="gradient-text">Battle Arena</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '480px' }}>
-                            Don't just compete—dominate. Create private rooms with custom
+                            Don&apos;t just compete—dominate. Create private rooms with custom
                             access codes or join public matches to test your knowledge against
                             the best minds in the community, worldwide.
                         </p>
