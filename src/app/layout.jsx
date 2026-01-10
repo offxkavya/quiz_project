@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata = {
-    title: "AI Quiz Platform - Master Your Knowledge",
+    title: "Bittle-AI - Master Your Knowledge",
     description: "Experience the next generation of quiz platforms. Generate custom quizzes with AI and challenge friends in real-time.",
 };
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
                 <nav className="navbar">
                     <div className="container nav-content">
                         <Link href="/" className="logo">
-                            AI<span className="gradient-text">Quiz</span>
+                            Bittle-AI
                         </Link>
                         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
                             <Link href="/rooms" className="text-muted" style={{ textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' }}>

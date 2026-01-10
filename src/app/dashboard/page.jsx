@@ -75,11 +75,11 @@ export default function Dashboard() {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 marginBottom: '4rem',
-                borderBottom: '1px solid var(--border-faint)',
+                borderBottom: '1px solid var(--border-subtle)',
                 paddingBottom: '2rem'
             }}>
                 <div>
-                    <h1 style={{ fontSize: '2.5rem', marginBottom: '0.25rem' }}>Welcome, <span className="gradient-text">{user.username}</span></h1>
+                    <h1 style={{ fontSize: '2.5rem', marginBottom: '0.25rem' }}>Welcome, <span className="text-primary">{user.username}</span></h1>
                     <p className="text-muted" style={{ fontSize: '1rem' }}>Your knowledge dashboard is ready.</p>
                 </div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
@@ -128,7 +128,7 @@ export default function Dashboard() {
                 {/* Main Content: Room List */}
                 <main>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-                        <h2 style={{ fontSize: '1.5rem' }}>Active <span className="gradient-text">Quizzes</span></h2>
+                        <h2 style={{ fontSize: '1.5rem' }}>Active <span className="text-primary">Quizzes</span></h2>
                         <button onClick={() => fetchRooms()} className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.8rem' }}>Refresh</button>
                     </div>
 

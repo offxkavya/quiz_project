@@ -35,7 +35,7 @@ export default function Register() {
     return (
         <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh' }}>
             <div className="card-clean animate-fade-in" style={{ width: '100%', maxWidth: '420px' }}>
-                <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '0.5rem' }}>Join the <span className="gradient-text">Arena</span></h2>
+                <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '0.5rem' }}>Join the <span className="text-primary">Arena</span></h2>
                 <p className="text-muted" style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '0.9rem' }}>Create your account to start battling</p>
 
                 {error && (

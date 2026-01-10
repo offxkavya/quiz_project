@@ -14,7 +14,7 @@ export default function Home() {
             }}>
                 <div className="animate-fade-in">
                     <h1 style={{ fontSize: '4.5rem', lineHeight: '1.1', marginBottom: '1.5rem', fontWeight: '800' }}>
-                        Master Any Topic with <span className="gradient-text">AI Power</span>
+                        Master Any Topic with <span className="text-primary">AI Power</span>
                     </h1>
                     <p className="text-muted" style={{ fontSize: '1.25rem', marginBottom: '2.5rem', maxWidth: '540px' }}>
                         The ultimate battleground for knowledge. Generate high-fidelity quizzes
@@ -54,8 +54,8 @@ export default function Home() {
                         zIndex: -1
                     }}></div>
                     <Image
-                        src="/ai-robot.png"
-                        alt="AI Quiz Mascot"
+                        src="/bittle-robot-mascot.png"
+                        alt="Bittle-AI Mascot"
                         width={500}
                         height={500}
                         style={{ objectFit: 'contain', width: '100%', height: 'auto', maxWidth: '450px' }}
@@ -95,7 +95,7 @@ export default function Home() {
                             01. INTELLIGENCE
                         </div>
                         <h2 style={{ fontSize: '3rem', marginBottom: '2rem', lineHeight: '1.1', fontWeight: '800' }}>
-                            Groq AI <br /><span className="gradient-text">Neural Engine</span>
+                            Groq AI <br /><span className="text-primary">Neural Engine</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '480px' }}>
                             Transcend standard quiz generation. Our integration with Llama 3.3
@@ -107,10 +107,10 @@ export default function Home() {
                         padding: '4rem',
                         display: 'flex',
                         justifyContent: 'center',
-                        background: 'rgba(22, 26, 41, 0.4)',
+                        background: 'rgba(253, 250, 246, 0.8)',
                         backdropFilter: 'blur(20px)',
-                        border: '1px solid rgba(129, 140, 248, 0.2)',
-                        boxShadow: '0 20px 40px -20px rgba(0,0,0,0.5), inset 0 0 20px rgba(129,140,248,0.05)'
+                        border: '1px solid var(--border-subtle)',
+                        boxShadow: '0 20px 40px -20px rgba(69, 26, 3, 0.1)'
                     }}>
                         <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--primary)', filter: 'drop-shadow(0 0 10px rgba(129,140,248,0.4))' }}>
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
@@ -127,10 +127,10 @@ export default function Home() {
                         display: 'flex',
                         justifyContent: 'center',
                         order: 1,
-                        background: 'rgba(22, 26, 41, 0.4)',
+                        background: 'rgba(253, 250, 246, 0.8)',
                         backdropFilter: 'blur(20px)',
-                        border: '1px solid rgba(192, 132, 252, 0.2)',
-                        boxShadow: '0 20px 40px -20px rgba(0,0,0,0.5), inset 0 0 20px rgba(192,132,252,0.05)'
+                        border: '1px solid var(--border-subtle)',
+                        boxShadow: '0 20px 40px -20px rgba(69, 26, 3, 0.1)'
                     }}>
                         <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--accent)', filter: 'drop-shadow(0 0 10px rgba(192,132,252,0.4))' }}>
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -156,7 +156,7 @@ export default function Home() {
                             02. MULTIPLAYER
                         </div>
                         <h2 style={{ fontSize: '3rem', marginBottom: '2rem', lineHeight: '1.1', fontWeight: '800' }}>
-                            Global <br /><span className="gradient-text">Battle Arena</span>
+                            Global <br /><span className="text-primary">Battle Arena</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '480px' }}>
                             Don&apos;t just compete—dominate. Create private rooms with custom
@@ -185,7 +185,7 @@ export default function Home() {
                             03. PERFORMANCE
                         </div>
                         <h2 style={{ fontSize: '3rem', marginBottom: '2rem', lineHeight: '1.1', fontWeight: '800' }}>
-                            Advanced <br /><span className="gradient-text">Analytics</span>
+                            Advanced <br /><span className="text-primary">Analytics</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '480px' }}>
                             Every battle is a data point. Track your progress with detailed
@@ -197,10 +197,10 @@ export default function Home() {
                         padding: '4rem',
                         display: 'flex',
                         justifyContent: 'center',
-                        background: 'rgba(22, 26, 41, 0.4)',
+                        background: 'rgba(253, 250, 246, 0.8)',
                         backdropFilter: 'blur(20px)',
-                        border: '1px solid rgba(16, 185, 129, 0.2)',
-                        boxShadow: '0 20px 40px -20px rgba(0,0,0,0.5), inset 0 0 20px rgba(16,185,129,0.05)'
+                        border: '1px solid var(--border-subtle)',
+                        boxShadow: '0 20px 40px -20px rgba(69, 26, 3, 0.1)'
                     }}>
                         <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#10b981', filter: 'drop-shadow(0 0 10px rgba(16,185,129,0.4))' }}>
                             <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>

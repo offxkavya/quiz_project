@@ -110,7 +110,7 @@ export default function QuizGenerate() {
             <div className="card-clean animate-fade-in" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 {step === 1 && (
                     <div style={{ maxWidth: '500px', margin: '0 auto' }}>
-                        <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Generate <span className="gradient-text">AI Quiz</span></h2>
+                        <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Generate <span className="text-primary">AI Quiz</span></h2>
                         <p className="text-muted" style={{ marginBottom: '2.5rem' }}>Harness Groq AI to create custom-tailored questions in seconds.</p>
 
                         <form onSubmit={handleGenerate}>
@@ -145,7 +145,7 @@ export default function QuizGenerate() {
 
                 {step === 2 && (
                     <>
-                        <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Curate <span className="gradient-text">Questions</span></h2>
+                        <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Curate <span className="text-primary">Questions</span></h2>
                         <p className="text-muted" style={{ marginBottom: '2rem' }}>Review the generated questions. Click to toggle them in your quiz.</p>
 
                         <div style={{ maxHeight: '450px', overflowY: 'auto', marginBottom: '2.5rem', paddingRight: '1rem' }}>
@@ -194,7 +194,7 @@ export default function QuizGenerate() {
 
                 {step === 3 && (
                     <div style={{ maxWidth: '500px', margin: '0 auto' }}>
-                        <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Final <span className="gradient-text">Configuration</span></h2>
+                        <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Final <span className="text-primary">Configuration</span></h2>
                         <p className="text-muted" style={{ marginBottom: '2.5rem' }}>Set your battle parameters and launch the arena.</p>
 
                         <form onSubmit={handleCreateQuiz}>

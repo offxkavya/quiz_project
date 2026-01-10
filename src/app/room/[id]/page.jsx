@@ -146,17 +146,18 @@ export default function RoomPage() {
                             marginBottom: '2.5rem'
                         }}>
                             <h3 style={{ fontSize: '1rem', marginBottom: '1.5rem', fontWeight: '600' }}>
-                                Combatants Ready (<span className="gradient-text">{room.currentParticipants.length}/{room.maxParticipants}</span>)
+                                Combatants Ready (<span className="text-primary">{room.currentParticipants.length}/{room.maxParticipants}</span>)
                             </h3>
                             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
                                 {/* Host Avatar */}
                                 <div style={{
                                     padding: '0.6rem 1.25rem',
-                                    background: 'linear-gradient(135deg, var(--primary), var(--accent))',
+                                    background: 'var(--primary)',
+                                    color: '#fdfaf6',
                                     borderRadius: '50px',
                                     fontSize: '0.85rem',
                                     fontWeight: '600',
-                                    boxShadow: '0 4px 12px rgba(129, 140, 248, 0.3)'
+                                    boxShadow: '0 4px 12px rgba(146, 64, 14, 0.3)'
                                 }}>
                                     Host: {user.username}
                                 </div>
@@ -195,7 +196,7 @@ export default function RoomPage() {
                         sticky: 'top',
                         top: '0',
                         zIndex: 10,
-                        background: 'rgba(15, 17, 26, 0.8)',
+                        background: 'rgba(253, 250, 246, 0.8)',
                         backdropFilter: 'blur(10px)',
                         padding: '1rem',
                         borderRadius: 'var(--radius-md)',

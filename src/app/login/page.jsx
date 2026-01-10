@@ -37,7 +37,7 @@ export default function Login() {
     return (
         <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh' }}>
             <div className="card-clean animate-fade-in" style={{ width: '100%', maxWidth: '420px' }}>
-                <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '0.5rem' }}>Welcome <span className="gradient-text">Back</span></h2>
+                <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '0.5rem' }}>Welcome <span className="text-primary">Back</span></h2>
                 <p className="text-muted" style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '0.9rem' }}>Enter your credentials to access your arena</p>
 
                 {error && (

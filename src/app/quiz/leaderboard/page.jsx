@@ -30,9 +30,9 @@ function LeaderboardContent() {
     }, [quizId]);
 
     return (
-        <div className="glass-card animate-fade-in" style={{ maxWidth: '600px', margin: '0 auto' }}>
+        <div className="card-clean animate-fade-in" style={{ maxWidth: '600px', margin: '0 auto' }}>
             <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                Battle <span className="gradient-text">Results</span>
+                Battle <span className="text-primary">Results</span>
             </h2>
 
             {loading ? (
@@ -40,13 +40,13 @@ function LeaderboardContent() {
             ) : (
                 <div style={{ display: 'grid', gap: '1rem' }}>
                     {leaderboard.length > 0 ? leaderboard.map((entry, i) => (
-                        <div key={i} className="glass-card" style={{
+                        <div key={i} className="card-clean" style={{
                             display: 'flex',
                             justifyContent: 'space-between',
                             alignItems: 'center',
                             padding: '1rem 2rem',
-                            border: i === 0 ? '2px solid gold' : '1px solid var(--glass-border)',
-                            background: i === 0 ? 'rgba(255, 215, 0, 0.1)' : 'var(--glass)'
+                            border: i === 0 ? '2px solid #b45309' : '1px solid var(--border-subtle)',
+                            background: i === 0 ? 'rgba(180, 83, 9, 0.1)' : 'var(--bg-card)'
                         }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                                 <span style={{ fontSize: '1.5rem', fontWeight: '700', color: i === 0 ? 'gold' : 'var(--text-muted)' }}>
