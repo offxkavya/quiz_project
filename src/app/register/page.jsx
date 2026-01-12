@@ -45,7 +45,7 @@ export default function Register() {
                 )}
 
                 <form onSubmit={handleSubmit}>
-                    <div style={{ marginBottom: '1.20rem' }}>
+                    <div style={{ marginBottom: '1.25rem' }}>
                         <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: '500' }}>Username</label>
                         <input
                             className="input"
