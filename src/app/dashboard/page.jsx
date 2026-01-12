@@ -25,9 +25,10 @@ export default function Dashboard() {
         try {
             const res = await fetch(`/api/room/search?topic=${topic}`);
             const data = await res.json();
-            setRooms(data.rooms);
+            setRooms(data.rooms || []);
         } catch (err) {
             console.error("Fetch Rooms Error:", err);
+            setRooms([]);
         } finally {
             setLoading(false);
         }
@@ -115,7 +116,7 @@ export default function Dashboard() {
                             <h4 style={{ fontSize: '0.9rem', marginBottom: '1rem', color: 'var(--text-muted)' }}>Quick Stats</h4>
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
                                 <span style={{ fontSize: '0.85rem' }}>Active Rooms</span>
-                                <span style={{ fontWeight: '600' }}>{rooms.length}</span>
+                                <span style={{ fontWeight: '600' }}>{rooms?.length || 0}</span>
                             </div>
                             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <span style={{ fontSize: '0.85rem' }}>Rank</span>
@@ -138,7 +139,7 @@ export default function Dashboard() {
                         </div>
                     ) : (
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.5rem' }}>
-                            {rooms.length > 0 ? rooms.map((room) => (
+                            {rooms?.length > 0 ? rooms.map((room) => (
                                 <div key={room._id} className="card-clean animate-fade-in hover-lift">
                                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                                         <div style={{

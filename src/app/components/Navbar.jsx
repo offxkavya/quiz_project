@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         // Check login status on mount and when storage changes
@@ -14,7 +16,7 @@ export default function Navbar() {
         checkAuth();
         window.addEventListener('storage', checkAuth);
         return () => window.removeEventListener('storage', checkAuth);
-    }, []);
+    }, [pathname]);
 
     return (
         <nav className="navbar">

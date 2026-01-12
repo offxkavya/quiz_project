@@ -1,5 +1,6 @@
 import dbConnect from "@/lib/db";
 import Room from "@/models/Room";
+import User from "@/models/User";
 import Quiz from "@/models/Quiz";
 import { NextResponse } from "next/server";
 

@@ -30,7 +30,7 @@ export default function Home() {
                     </p>
 
                     <div style={{ display: 'flex', gap: '1.25rem' }}>
-                        <Link href={isLoggedIn ? "/quiz/generate" : "/register"} className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
+                        <Link href={isLoggedIn ? "/dashboard" : "/register"} className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
                             Start Your Battle
                         </Link>
                         <Link href="/dashboard" className="btn btn-outline" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
