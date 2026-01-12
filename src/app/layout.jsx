@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -10,21 +10,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className="bg-grid">
-                <nav className="navbar">
-                    <div className="container nav-content">
-                        <Link href="/" className="logo">
-                            Bittle-AI
-                        </Link>
-                        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-                            <Link href="/rooms" className="text-muted" style={{ textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' }}>
-                                Browse Rooms
-                            </Link>
-                            <Link href="/login" className="btn btn-primary">
-                                Launch App
-                            </Link>
-                        </div>
-                    </div>
-                </nav>
+                <Navbar />
                 <main className="min-h-screen">
                     {children}
                 </main>

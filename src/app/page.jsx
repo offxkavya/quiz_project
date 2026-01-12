@@ -1,7 +1,15 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        setIsLoggedIn(!!localStorage.getItem("token"));
+    }, []);
+
     return (
         <div className="container" style={{ paddingTop: '8vh', paddingBottom: '10vh' }}>
             {/* Hero Section */}
@@ -22,10 +30,10 @@ export default function Home() {
                     </p>
 
                     <div style={{ display: 'flex', gap: '1.25rem' }}>
-                        <Link href="/register" className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
+                        <Link href={isLoggedIn ? "/quiz/generate" : "/register"} className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
                             Start Your Battle
                         </Link>
-                        <Link href="/rooms" className="btn btn-outline" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
+                        <Link href="/dashboard" className="btn btn-outline" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
                             Browse Arena
                         </Link>
                     </div>
