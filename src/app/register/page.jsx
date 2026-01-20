@@ -57,7 +57,7 @@ export default function Register() {
                         />
                     </div>
 
-                    <div style={{ marginBottom: '1.2rem' }}>
+                    <div style={{ marginBottom: '1.25rem' }}>
                         <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: '500' }}>Email Address</label>
                         <input
                             className="input"
