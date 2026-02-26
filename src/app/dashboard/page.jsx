@@ -95,7 +95,6 @@ export default function Dashboard() {
             </header>
 
             <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: '3rem' }}>
-                {/* Sidebar Search/Filters */}
                 <aside>
                     <div className="card-clean" style={{ position: 'sticky', top: '2rem' }}>
                         <h3 style={{ fontSize: '1.1rem', marginBottom: '1.25rem', fontWeight: '600' }}>Find a Battle</h3>
@@ -126,7 +125,6 @@ export default function Dashboard() {
                     </div>
                 </aside>
 
-                {/* Main Content: Room List */}
                 <main>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
                         <h2 style={{ fontSize: '1.5rem' }}>Active <span className="text-primary">Quizzes</span></h2>

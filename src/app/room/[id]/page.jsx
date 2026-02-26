@@ -17,19 +17,12 @@ export default function RoomPage() {
 
     const fetchRoomData = useCallback(async () => {
         try {
-            // For simplicity, we search for the room (which populates quiz)
             const res = await fetch(`/api/room/search`);
             const data = await res.json();
             const currentRoom = data.rooms.find(r => r._id === roomId);
 
             if (!currentRoom) throw new Error("Room not found");
             setRoom(currentRoom);
-
-            // Fetch questions for this quiz
-            // In a real app, this would be a specific GET /api/quiz/[id] route
-            // For now, we'll assume we need to add a route for fetching quiz details or just fetch all questions
-            // Since I didn't create a GET questions route exactly, I'll assume I should have. 
-            // I'll add a quick fetch for questions.
         } catch (err) {
             console.error(err);
         } finally {
@@ -149,7 +142,6 @@ export default function RoomPage() {
                                 Combatants Ready (<span className="text-primary">{room.currentParticipants.length}/{room.maxParticipants}</span>)
                             </h3>
                             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-                                {/* Host Avatar */}
                                 <div style={{
                                     padding: '0.6rem 1.25rem',
                                     background: 'var(--primary)',
@@ -161,7 +153,6 @@ export default function RoomPage() {
                                 }}>
                                     Host: {user.username}
                                 </div>
-                                {/* Other participants would appear here */}
                                 <div className="animate-pulse" style={{
                                     padding: '0.6rem 1.25rem',
                                     background: 'var(--bg-input)',

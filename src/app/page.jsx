@@ -12,7 +12,6 @@ export default function Home() {
 
     return (
         <div className="container" style={{ paddingTop: '8vh', paddingBottom: '10vh' }}>
-            {/* Hero Section */}
             <div style={{
                 display: 'grid',
                 gridTemplateColumns: '1.2fr 1fr',
@@ -72,9 +71,7 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Features Section - Bespoke Handcrafted Layout */}
             <div style={{ marginTop: '12rem', display: 'flex', flexDirection: 'column', gap: '12rem' }}>
-                {/* Feature 1 */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '6rem', alignItems: 'center' }} className="animate-fade-in">
                     <div style={{ position: 'relative' }}>
                         <div style={{
@@ -128,7 +125,6 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* Feature 2 */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '6rem', alignItems: 'center' }} className="animate-fade-in">
                     <div className="card-clean" style={{
                         padding: '4rem',
@@ -174,7 +170,6 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* Feature 3 */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '6rem', alignItems: 'center' }} className="animate-fade-in">
                     <div>
                         <div style={{
