@@ -51,9 +51,13 @@ export async function POST(req) {
             { status: 200 }
         );
     } catch (error) {
-        console.error("Login Error:", error);
+        console.error("Login API Route Error:", {
+            message: error.message,
+            stack: error.stack,
+            code: error.code
+        });
         return NextResponse.json(
-            { error: "Internal Server Error" },
+            { error: "Internal Server Error", details: error.message },
             { status: 500 }
         );
     }

@@ -40,9 +40,13 @@ export async function POST(req) {
             { status: 201 }
         );
     } catch (error) {
-        console.error("Register Error:", error);
+        console.error("Register API Route Error:", {
+            message: error.message,
+            stack: error.stack,
+            code: error.code
+        });
         return NextResponse.json(
-            { error: "Internal Server Error" },
+            { error: "Internal Server Error", details: error.message },
             { status: 500 }
         );
     }
