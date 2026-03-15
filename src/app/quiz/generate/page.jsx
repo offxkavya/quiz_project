@@ -109,7 +109,7 @@ export default function QuizGenerate() {
         <div className="container" style={{ paddingTop: '8vh', paddingBottom: '10vh' }}>
             <div className="card-clean animate-fade-in" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 {step === 1 && (
-                    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+                    <div style={{ maxWidth: '501px', margin: '0 auto' }}>
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Generate <span className="text-primary">AI Quiz</span></h2>
                         <p className="text-muted" style={{ marginBottom: '2.5rem' }}>Harness Groq AI to create custom-tailored questions in seconds.</p>
 
