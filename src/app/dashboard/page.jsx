@@ -159,9 +159,9 @@ export default function Dashboard() {
                                         )}
                                     </div>
 
-                                    <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{room.quizId.title}</h3>
+                                    <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{room.quizId?.title || "Untitled Quiz"}</h3>
                                     <p className="text-muted" style={{ fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-                                        Topic: {room.quizId.topic}
+                                        Topic: {room.quizId?.topic || "Unknown"}
                                     </p>
 
                                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '1.25rem', borderTop: '1px solid var(--border-faint)' }}>
