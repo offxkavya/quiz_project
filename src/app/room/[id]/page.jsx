@@ -17,12 +17,11 @@ export default function RoomPage() {
 
     const fetchRoomData = useCallback(async () => {
         try {
-            const res = await fetch(`/api/room/search`);
+            const res = await fetch(`/api/room/${roomId}`);
             const data = await res.json();
-            const currentRoom = data.rooms.find(r => r._id === roomId);
-
-            if (!currentRoom) throw new Error("Room not found");
-            setRoom(currentRoom);
+            
+            if (!res.ok) throw new Error(data.error || "Failed to fetch room");
+            setRoom(data.room);
         } catch (err) {
             console.error(err);
         } finally {
@@ -62,12 +61,20 @@ export default function RoomPage() {
     };
 
     const startQuiz = async () => {
-        // Fetch questions before starting
-        const res = await fetch(`/api/quiz/questions?quizId=${room.quizId._id}`);
-        const data = await res.json();
-        setQuestions(data.questions);
-        setQuizStarted(true);
-        setTimeLeft(room.quizId.duration * 60);
+        try {
+            // Fetch questions before starting
+            const res = await fetch(`/api/quiz/questions?quizId=${room.quizId._id}`);
+            const data = await res.json();
+            setQuestions(data.questions);
+            setQuizStarted(true);
+            
+            // Set duration, fallback to 10 if missing
+            const duration = room.quizId.duration || 10;
+            setTimeLeft(duration * 60);
+        } catch (err) {
+            console.error("Failed to start quiz:", err);
+            alert("Error starting quiz. Please try again.");
+        }
     };
 
     useEffect(() => {
@@ -166,7 +173,7 @@ export default function RoomPage() {
                             </div>
                         </div>
 
-                        {(room.host === user.id || room.host._id === user.id || (typeof room.host === 'object' && room.host._id === user.id)) ? (
+                        {(room.host?._id === user.id || room.host === user.id) ? (
                             <button className="btn btn-primary" style={{ width: '100%', padding: '1rem', fontSize: '1rem' }} onClick={startQuiz}>
                                 Initiate Battle for All
                             </button>
