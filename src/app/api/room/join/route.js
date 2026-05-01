@@ -39,7 +39,7 @@ export async function POST(req) {
         }
 
         // Check if user is already in the room
-        if (room.currentParticipants.includes(user.userId)) {
+        if (room.currentParticipants.some(id => id.toString() === user.userId)) {
             return NextResponse.json({ message: "Already in room", room }, { status: 200 });
         }
 
