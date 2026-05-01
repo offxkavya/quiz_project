@@ -20,7 +20,7 @@ export async function GET(req) {
         }
 
         const rooms = await Room.find(query)
-            .populate("quizId", "title topic difficulty")
+            .populate("quizId", "title topic difficulty duration")
             .populate("host", "username")
             .sort({ createdAt: -1 });
 

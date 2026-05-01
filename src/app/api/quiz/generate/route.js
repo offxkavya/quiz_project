@@ -21,9 +21,9 @@ export async function POST(req) {
 
         const prompt = `Generate ${numQuestions} multiple-choice questions about "${topic}" at a ${difficulty} difficulty level.
         Return a JSON object with a key "questions" containing an array of objects.
-        Each question object must have:
+        Each question object MUST have:
         - "questionText": The question string
-        - "options": An array of exactly 4 strings
+        - "options": An array of EXACTLY 4 unique strings. This is critical.
         - "correctAnswer": The string from the options array that is correct.
 
         Example format:
