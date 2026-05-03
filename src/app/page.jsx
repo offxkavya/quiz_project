@@ -125,7 +125,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1.3fr 1fr', gap: '6rem', alignItems: 'center' }} className="animate-fade-in">
+                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '6rem', alignItems: 'center' }} className="animate-fade-in">
                     <div className="card-clean" style={{
                         padding: '4rem',
                         display: 'flex',
