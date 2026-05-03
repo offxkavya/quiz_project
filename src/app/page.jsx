@@ -112,7 +112,7 @@ export default function Home() {
                         padding: '4rem',
                         display: 'flex',
                         justifyContent: 'center',
-                        background: 'rgba(253, 250, 246, 0.8)',
+                        background: 'rgba(253, 250, 245, 0.8)',
                         backdropFilter: 'blur(20px)',
                         border: '1px solid var(--border-subtle)',
                         boxShadow: '0 20px 40px -20px rgba(69, 26, 3, 0.1)'
