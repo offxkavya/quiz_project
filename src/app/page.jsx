@@ -159,7 +159,7 @@ export default function Home() {
                         }}>
                             02. MULTIPLAYER
                         </div>
-                        <h2 style={{ fontSize: '3rem', marginBottom: '2rem', lineHeight: '1.1', fontWeight: '800' }}>
+                        <h2 style={{ fontSize: '2rem', marginBottom: '2rem', lineHeight: '1.1', fontWeight: '800' }}>
                             Global <br /><span className="text-primary">Battle Arena</span>
                         </h2>
                         <p className="text-muted" style={{ fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '480px' }}>
