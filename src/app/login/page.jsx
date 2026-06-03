@@ -47,7 +47,7 @@ export default function Login() {
                 )}
 
                 <form onSubmit={handleSubmit}>
-                    <div style={{ marginBottom: '1.23rem' }}>
+                    <div style={{ marginBottom: '1.24rem' }}>
                         <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: '500' }}>Email Address</label>
                         <input
                             className="input"
